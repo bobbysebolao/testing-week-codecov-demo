@@ -5,13 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "tape skeleton/test.js | tap-spec",
-    "coverage": "nyc npm run test"
+    "report-coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov --token=0ce4df70-307a-4778-96c4-3e7b44282024"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "codecov": "^3.6.1",
     "nyc": "^14.1.1",
     "tap-spec": "^5.0.0",
     "tape": "^4.11.0"
