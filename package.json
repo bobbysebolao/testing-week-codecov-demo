@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "tape skeleton/test.js | tap-spec",
-    "report-coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov"
+    "report-coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov --token=0ce4df70-307a-4778-96c4-3e7b44282024"
   },
   "keywords": [],
   "author": "",
